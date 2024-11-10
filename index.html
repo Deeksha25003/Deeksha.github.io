@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deeksha's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Reset and basic styling */
         * {
             margin: 0;
             padding: 0;
@@ -14,11 +14,10 @@
         }
 
         body {
-            background-color: rgb(0, 0, 33); 
+            background-color: rgb(0, 0, 33);
             color: #fff;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            scroll-behavior: smooth;
         }
 
         nav {
@@ -40,7 +39,6 @@
             text-decoration: none;
             color: white;
             font-weight: 600;
-            transition: color 0.3s, font-size 0.3s;
         }
 
         nav ul li a:hover {
@@ -70,26 +68,24 @@
 
         .firstSection {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             margin: 100px 0;
-            flex-wrap: wrap;
-            text-align: center;
         }
 
         .leftSection {
             font-size: 1.2rem;
-            max-width: 500px;
+            width: 50%;
             text-align: left;
+            margin-right: 20px;
         }
 
         .leftSection h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 15px;
         }
 
         .btn {
-            display: inline-block;
             padding: 12px 20px;
             background-color: rgb(158, 59, 158);
             color: whitesmoke;
@@ -98,17 +94,21 @@
             font-size: 1rem;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background-color: rgb(104, 36, 167);
         }
 
+        .rightSection {
+            width: 40%;
+            text-align: center;
+        }
+
         .rightSection img {
-            width: 60%; /* Adjusted for better appearance */
+            width: 90%;
             border-radius: 10px;
-            max-width: 300px;
         }
 
         .purple {
@@ -116,9 +116,10 @@
         }
 
         .section-content {
-            width: 70%;
-            margin: auto;
-            text-align: center;
+            width: 50%;
+            text-align: left;
+            margin-left: 5%;
+            margin-top: 40px;
         }
 
         .section-content p,
@@ -174,68 +175,64 @@
     </header>
 
     <main>
-        <section id="Home" class="firstSection">
-            <div class="leftSection">
-                <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
-                <p>and I am <span id="element"></span></p>
-                <br>
-                <a href="Deeksha_Divakar_Resume.pdf" class="btn">Download Resume</a>
-            </div>
-            <div class="rightSection">
-                <img src="deeksha pik.jpg" alt="Deeksha's Picture">
-            </div>
-        </section>
-
-        <section id="About">
-            <div class="section-content">
-                <h1 class="section-title">About Me</h1>
-                <p>I am Deeksha, a resident of Mangaluru, currently pursuing my BE with a specialization in AIML at Canara Engineering College. This is my first portfolio, and I hope you enjoy learning more about me. I have completed two ML projects and am currently working on my third. Details are shared below.</p>
-            </div>
-            <hr>
-        </section>
-
-        <section id="Skills">
-            <div class="section-content">
-                <h1 class="section-title">Skills</h1>
-                <ul class="skills-list">
-                    <li>C Programming</li>
-                    <li>Core Java</li>
-                    <li>HTML</li>
-                    <li>MySQL</li>
-                    <li>Canva</li>
-                    <li>Microsoft Office</li>
-                    <li>Leadership</li>
-                    <li>Public Speaking</li>
-                </ul>
-            </div>
-            <hr>
-        </section>
-
-        <section id="Project">
-            <div class="section-content">
-                <h1 class="section-title">Projects</h1>
-                <ul class="projects-list">
-                    <li>🌱 <b>Plant Weed Detection:</b> A project that uses a 2D CNN model to detect weeds in a crop field, aiding farmers in identifying unwanted plants.</li>
-                    <li>🌿 <b>Plant Disease Detection:</b> An ML project that identifies various plant diseases using the "Plant Village Dataset," helping improve crop yield through early detection.</li>
-                    <li>🎶 <b>Music Genre Classification and Recommendation:</b> Classifies music genres based on frequency using the GTZAN dataset.</li>
-                    <li>🔒 <b>Cybercrime Management System:</b> A DBMS project that allows users to file and track complaints in the field of cybercrime.</li>
-                </ul>
-            </div>
-            <hr>
-        </section>
-
-        <section id="Contact">
-            <div class="section-content">
-                <h1 class="section-title">Contact</h1>
-                <div class="contact-info">
-                    <p><img src="phone.png.svg" width="20px" height="20px"> 9945184300</p>
-                    <p><img src="gmail.png.svg" width="25px" height="25px"> deekshu25003@gmail.com</p>
-                    <p><img src="linkedin.png.svg" width="25px" height="25px"> <a href="http://www.linkedin.com/in/deeksha-d-8517b4228" target="_blank">LinkedIn</a></p>
-                    <p><img src="git.png.svg" width="20px" height="20px"> <a href="http://github.com/Deeksha25003" target="_blank">GitHub</a></p>
-                    <p><img src="insta.png.svg" width="20px" height="20px"> @__.deekshaaaah</p>
+        <section id="Home">
+            <section class="firstSection">
+                <div class="leftSection">
+                    <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
+                    <div>and I am <span id="element"></span></div>
+                    <br>
+                    <div class="buttons">
+                        <a href="Deeksha_Divakar_Resume.pdf" class="btn">Download Resume</a>
+                    </div>
                 </div>
-                <div class="footer">&copy; 2024 Deeksha's Portfolio</div>
+                <div class="rightSection">
+                    <img src="deeksha pik.jpg" alt="Deeksha's Picture">
+                </div>
+            </section>
+        </section>
+
+        <section id="About" class="section-content">
+            <h1 class="section-title">About Me</h1>
+            <p>I am Deeksha, a resident of Mangaluru, currently pursuing my BE with a specialization in AIML at Canara Engineering College. This is my first portfolio, and I hope you enjoy learning more about me. I have completed two ML projects and am currently working on my third. Details are shared below.</p>
+            <hr>
+        </section>
+
+        <section id="Skills" class="section-content">
+            <h1 class="section-title">Skills</h1>
+            <ul class="skills-list">
+                <li>C Programming</li>
+                <li>Core Java</li>
+                <li>HTML</li>
+                <li>MySQL</li>
+                <li>Canva</li>
+                <li>Microsoft Office</li>
+                <li>Leadership</li>
+                <li>Public Speaking</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section id="Project" class="section-content">
+            <h1 class="section-title">Projects</h1>
+            <ul class="projects-list">
+                <li>🌱 <b>Plant Weed Detection:</b> A project that uses a 2D CNN model to detect weeds in a crop field, aiding farmers in identifying unwanted plants.</li>
+                <li>🌿 <b>Plant Disease Detection:</b> An ML project that identifies various plant diseases using the "Plant Village Dataset," helping improve crop yield through early detection.</li>
+                <li>🎶 <b>Music Genre Classification and Recommendation:</b> Classifies music genres based on frequency using the GTZAN dataset.</li>
+                <li>🔒 <b>Cybercrime Management System:</b> A DBMS project that allows users to file and track complaints in the field of cybercrime.</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section id="Contact" class="section-content">
+            <h1 class="section-title">Contact</h1>
+            <div class="contact-info">
+                <p><img src="phone.png.svg" width="20px" height="20px"> 9945184300</p>
+                <p><img src="gmail.png.svg" width="25px" height="25px"> deekshu25003@gmail.com</p>
+                <p><img src="linkedin.png.svg" width="25px" height="25px"> <a href="http://www.linkedin.com/in/deeksha-d-8517b4228" target="_blank">LinkedIn</a></p>
+                <p><img src="git.png.svg" width="20px" height="20px"> <a href="http://github.com/Deeksha25003" target="_blank">GitHub</a></p>
+                <p><img src="insta.png.svg" width="20px" height="20px"> @__.deekshaaaah</p>
             </div>
+            <div class="footer">&copy; 2024 Deeksha's Portfolio</div>
         </section>
     </main>
 
@@ -249,4 +246,5 @@
         });
     </script>
 </body>
+
 </html>
