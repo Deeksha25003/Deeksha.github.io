@@ -18,8 +18,7 @@
             color: #fff;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
 
         header {
@@ -73,20 +72,10 @@
         }
 
         .firstSection {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin: 100px 0;
         }
 
-        .leftSection {
-            font-size: 1.2rem;
-            width: 45%;
-            text-align: center;
-            margin-right: 20px;
-        }
-
-        .leftSection h1 {
+        .firstSection h1 {
             font-size: 3rem;
             margin-bottom: 15px;
         }
@@ -107,14 +96,10 @@
             background-color: rgb(104, 36, 167);
         }
 
-        .rightSection {
-            width: 40%;
-            text-align: center;
-        }
-
-        .rightSection img {
-            width: 50%;
+        .firstSection img {
+            width: 150px;
             border-radius: 10px;
+            margin-top: 20px;
         }
 
         .purple {
@@ -122,13 +107,12 @@
         }
 
         .section-content {
-            width: 50%;
-            text-align: left;
+            width: 60%;
             margin: 40px auto;
+            text-align: center;
         }
 
-        .section-content p,
-        .section-content li {
+        .section-content p {
             margin: 10px 0;
             font-size: 1rem;
             line-height: 1.8;
@@ -136,8 +120,8 @@
 
         .skills-list,
         .projects-list {
-            list-style: disc;
-            padding-left: 20px;
+            list-style: none;
+            padding-left: 0;
         }
 
         .projects-list li {
@@ -177,18 +161,12 @@
     </header>
 
     <main>
-        <section id="Home">
-            <div class="firstSection">
-                <div class="leftSection">
-                    <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
-                    <div>and I am <span id="element"></span></div>
-                    <br>
-                    <a href="Deeksha Divakar (4CB21AI010) (1).pdf" class="btn">Download Resume</a>
-                </div>
-                <div class="rightSection">
-                    <img src="deeksha pik.jpg" alt="Deeksha's Picture">
-                </div>
-            </div>
+        <section id="Home" class="firstSection">
+            <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
+            <p>and I am <span id="element"></span></p>
+            <img src="deeksha pik.jpg" alt="Deeksha's Picture">
+            <br><br>
+            <a href="Deeksha Divakar (4CB21AI010) (1).pdf" class="btn">Download Resume</a>
         </section>
 
         <section id="About" class="section-content">
