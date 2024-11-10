@@ -73,7 +73,7 @@
 
         .firstSection {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Aligns content to the left */
             align-items: center;
             gap: 40px;
             margin: 100px 0;
@@ -82,6 +82,7 @@
         .intro-text {
             text-align: left;
             max-width: 400px;
+            margin-left: -50px; /* Move text further to the left */
         }
 
         .firstSection h1 {
@@ -106,7 +107,7 @@
         }
 
         .firstSection img {
-            width: 150px;
+            width: 200px; /* Increased image size */
             border-radius: 10px;
         }
 
@@ -172,12 +173,12 @@
         <section id="Home" class="firstSection">
             <div class="intro-text">
                 <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
-                <p>and I am <span id="element"></span></p>
+                <p>and I am <span id="element"></span></p><br><br>
                 <a href="Deeksha Divakar (4CB21AI010) (1).pdf" class="btn">Download Resume</a>
             </div>
             <img src="deeksha pik.jpg" alt="Deeksha's Picture">
         </section>
-
+<br><br>
         <section id="About" class="section-content">
             <h1 class="section-title">About Me</h1>
             <p>I am Deeksha, a resident of Mangaluru, currently pursuing my BE with a specialization in AIML at Canara Engineering College. This is my first portfolio, and I hope you enjoy learning more about me. I have completed two ML projects and am currently working on my third. Details are shared below.</p>
