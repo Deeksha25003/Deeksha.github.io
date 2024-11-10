@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeksha's Portfolio</title>
+    <title> <bold> Deeksha's Portfolio </bold></title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -18,11 +18,12 @@
             color: #fff;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
+            text-align: center; 
         }
 
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 0 20px;
             height: 80px;
@@ -68,16 +69,15 @@
 
         .firstSection {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            align-items: center; 
             margin: 100px 0;
         }
 
         .leftSection {
             font-size: 1.2rem;
-            width: 50%;
-            text-align: center;
-            margin-right: 20px;
+            width: 70%; 
+            margin-bottom: 20px;
         }
 
         .leftSection h1 {
@@ -102,12 +102,12 @@
         }
 
         .rightSection {
-            width: 40%;
+            width: 50%; 
             text-align: center;
         }
 
         .rightSection img {
-            width: 50%;
+            width: 60%;
             border-radius: 10px;
         }
 
@@ -116,9 +116,8 @@
         }
 
         .section-content {
-            width: 50%;
-            text-align: left;
-            margin-left: 5%;
+            width: 70%;
+            margin: 0 auto;
             margin-top: 40px;
         }
 
@@ -153,7 +152,6 @@
             margin-top: 40px;
             font-size: 0.9rem;
             color: #ddd;
-            text-align: center;
         }
     </style>
 </head>
@@ -161,16 +159,13 @@
 <body>
     <header>
         <nav>
-            <div class="left">Deeksha's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Project">Project</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -193,7 +188,8 @@
 
         <section id="About" class="section-content">
             <h1 class="section-title">About Me</h1>
-            <p>I am Deeksha, a resident of Mangaluru, currently pursuing my BE with a specialization in AIML at Canara Engineering College. This is my first portfolio, and I hope you enjoy learning more about me. I have completed two ML projects and am currently working on my third. Details are shared below.</p>
+            <p>I am Deeksha, a resident of Mangaluru, currently pursuing my BE with a specialization in AIML at Canara Engineering College.
+            My Latest Projects inclued ML Projects whose description has been given in the project section.</p>
             <hr>
         </section>
 
@@ -215,8 +211,8 @@
         <section id="Project" class="section-content">
             <h1 class="section-title">Projects</h1>
             <ul class="projects-list">
-                <li>🌱 <b>Plant Weed Detection:</b> A project that uses a 2D CNN model to detect weeds in a crop field, aiding farmers in identifying unwanted plants.</li>
-                <li>🌿 <b>Plant Disease Detection:</b> An ML project that identifies various plant diseases using the "Plant Village Dataset," helping improve crop yield through early detection.</li>
+                <li>🌱 <b>Plant Weed Detection:</b> A project that uses a 2D CNN model to detect weeds in a crop field, aiding farmers in identifying unwanted plants </li>
+                <li>🌿 <b>Plant Disease Detection:</b> An ML project that identifies various plant diseases using the "Plant Village Dataset," helping improve crop yield through early detection</li>
                 <li>🎶 <b>Music Genre Classification and Recommendation:</b> Classifies music genres based on frequency using the GTZAN dataset.</li>
                 <li>🔒 <b>Cybercrime Management System:</b> A DBMS project that allows users to file and track complaints in the field of cybercrime.</li>
             </ul>
