@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: rgb(0, 0, 33);
+            background-color: #0c0c33;
             color: #fff;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
@@ -22,15 +22,18 @@
 
         header {
             width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(18, 18, 62, 0.9);
+            z-index: 1000;
         }
 
         nav {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 0 20px;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
+            padding: 10px 20px;
         }
 
         nav ul {
@@ -43,11 +46,16 @@
             text-decoration: none;
             color: white;
             font-weight: 600;
+            transition: color 0.3s;
         }
 
         nav ul li a:hover {
             color: violet;
             font-size: 1.1rem;
+        }
+
+        main {
+            padding-top: 80px; /* To prevent content from hiding behind the fixed header */
         }
 
         h1 {
@@ -75,15 +83,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 100px 0;
-            width: 80%;
             margin: 100px auto;
+            width: 80%;
+            flex-wrap: wrap;
         }
 
         .intro-text {
             text-align: left;
-            max-width: 50px;
-            margin-left: -10px; /* Small shift to left */
+            max-width: 50%;
         }
 
         .firstSection h1 {
@@ -100,7 +107,8 @@
             font-size: 1rem;
             cursor: pointer;
             text-decoration: none;
-            transition: 0.3s;
+            transition: background-color 0.3s;
+            margin-top: 20px;
         }
 
         .btn:hover {
@@ -108,9 +116,10 @@
         }
 
         .firstSection img {
-            width: 230px; /* Slightly larger but controlled image size */
+            width: 230px;
             border-radius: 10px;
-            margin-left:20px;
+            margin-left: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .purple {
@@ -118,7 +127,7 @@
         }
 
         .section-content {
-            width: 60%;
+            width: 80%;
             margin: 40px auto;
             text-align: center;
         }
@@ -133,6 +142,7 @@
         .projects-list {
             list-style: none;
             padding-left: 0;
+            text-align: left;
         }
 
         .projects-list li {
@@ -155,6 +165,24 @@
             color: #ddd;
             text-align: center;
         }
+
+        @media (max-width: 768px) {
+            .firstSection {
+                flex -wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .firstSection img {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .intro-text {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -165,7 +193,7 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Project">Project</a></li>
+                <li><a href="#Project">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
@@ -176,7 +204,6 @@
             <div class="intro-text">
                 <h1>Hi, I'm <span class="purple">Deeksha Divakar</span></h1>
                 <p>and I am <span id="element"></span></p>
-                <br><br>
                 <a href="Deeksha Divakar (4CB21AI010) (1).pdf" class="btn">Download Resume</a>
             </div>
             <img src="deeksha pik.jpg" alt="Deeksha's Picture">
@@ -227,7 +254,7 @@
         </section>
     </main>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@ 2.0.16/dist/typed.umd.js"></script>
     <script>
         new Typed('#element', {
             strings: ['a Learnee ML Engineer', 'an Enthusiastic Learner'],
